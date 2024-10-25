@@ -1,0 +1,351 @@
+<html>
+    <head>
+        <title>Tablas en Html</title>
+        <link href="../css/style_page.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            header,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            main{
+                text-align: center;
+            }
+            section{
+                width: 80%;
+                height: auto;
+                display: inline-block;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>DATOS DE CONTACTO DE MI FAMILIA</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+             <h2>Tabla simple con separación de bordes de celda</h2>
+                <p>Datos de contacto de familiares en caso de alguna situación</p>
+                <table border="1" id="tabla1">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nancy</td>
+                            <td>Suárez</td>
+                            <td>Rodríguez</td>
+                            <td>222-589-3745</td>
+                            <td>nancysrod10@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Luis Felipe</td>
+                            <td>Ortiz</td>
+                            <td>Suárez</td>
+                            <td>221-175-9634</td>
+                            <td>jl_1999@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Blanca Estela</td>
+                            <td>Cruz</td>
+                            <td>Rodríguez</td>
+                            <td>222-784-0245</td>
+                            <td>blancaesc@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Antonio</td>
+                            <td>Díaz</td>
+                            <td>Suárez</td>
+                            <td>221-648-6125</td>
+                            <td>antonio_ds@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Georgina</td>
+                            <td>Herrera</td>
+                            <td>Suárez</td>
+                            <td>222-016-0048</td>
+                            <td>geo_suarh07@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Diana</td>
+                            <td>Suárez</td>
+                            <td>Rodríguez</td>
+                            <td>221-000-9431</td>
+                            <td>dianita_ds26@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla modificada por clase y con uso de colspan</h2>
+                <p>Datos de contacto de compañeros y amigos cercanos</p>
+                <table border="1" id="" class="tabla2">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th colspan="2">Teléfonos</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana Isis</td>
+                            <td>Morales</td>
+                            <td>Martínez</td>
+                            <td>222-589-3745</td>
+                            <td>223-045-1239</td>
+                            <td>anisis@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Estrada</td>
+                            <td>López</td>
+                            <td>221-175-9634</td>
+                            <td>222-789-3245</td>
+                            <td>jelopz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Yeray</td>
+                            <td>Córdova</td>
+                            <td>Romero</td>
+                            <td>222-784-0245</td>
+                            <td>221-698-0144</td>
+                            <td>yecordovar@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>David</td>
+                            <td>Romero</td>
+                            <td>Cano</td>
+                            <td>221-648-6125</td>
+                            <td></td>
+                            <td>dv_rom@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Renata</td>
+                            <td>Mendoza</td>
+                            <td>Jimenéz</td>
+                            <td>222-016-0048</td>
+                            <td>223-987-3456</td>
+                            <td>renmj@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Marisol</td>
+                            <td>Amador</td>
+                            <td>Escamilla</td>
+                            <td>221-000-9431</td>
+                            <td></td>
+                            <td>marsol_esc@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Zebra</h2>
+                <p>Datos de contacto de primos </p>
+                <table border="1" id="tabla3">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Daniel</td>
+                            <td>Roldan</td>
+                            <td>Suárez</td>
+                            <td>222-589-3745</td>
+                            <td>danni_srz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Emanuel</td>
+                            <td>Pérez</td>
+                            <td>Suárez</td>
+                            <td>221-175-9634</td>
+                            <td>emitaprz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Pérez</td>
+                            <td>Suárez</td>
+                            <td>222-784-0245</td>
+                            <td>charly_psrz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>José</td>
+                            <td>Roldan</td>
+                            <td>Suárez</td>
+                            <td>221-648-6125</td>
+                            <td>jose1999@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Liliana</td>
+                            <td>Quiróz</td>
+                            <td>Suárez</td>
+                            <td>222-016-0048</td>
+                            <td>lili.quiroz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Andre</td>
+                            <td>Durán</td>
+                            <td>Suárez</td>
+                            <td>221-000-9431</td>
+                            <td>andresuarz08@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section>
+                <h2>Tabla Hover</h2>
+                <p>Datos de contacto de tíos por parte de mi familia materna.</p>
+                <table border="1" id="tabla4">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gloria</td>
+                            <td>Rodríguez</td>
+                            <td>Cruz</td>
+                            <td>222-589-3745</td>
+                            <td>yoya_rdz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>José Luis</td>
+                            <td>Rodríguez</td>
+                            <td>Ramírez</td>
+                            <td>221-175-9634</td>
+                            <td>jlrodri15@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Blanca</td>
+                            <td>Suárez</td>
+                            <td>Rodríguez</td>
+                            <td>222-784-0245</td>
+                            <td>blanca_srz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Pablo</td>
+                            <td>Rodríguez</td>
+                            <td>Cruz</td>
+                            <td>221-648-6125</td>
+                            <td>pablo.rdzcruz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Leticia</td>
+                            <td>Salas</td>
+                            <td>Rodríguez</td>
+                            <td>222-016-0048</td>
+                            <td>letysalas.rdz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Guadalupe</td>
+                            <td>Suárez</td>
+                            <td>Rodríguez</td>
+                            <td>221-000-9431</td>
+                            <td>guadalupe16@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto">
+             <h2>Tabla con overflow</h2>
+                <p>Datos de contacto de mis tíos por parte de mi familia paterna</p>
+                <table border="1" id="tabla2" class="tabla2">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alejandro</td>
+                            <td>Olguin</td>
+                            <td>Guerra</td>
+                            <td>222-589-3745</td>
+                            <td>alez.olguin12@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>José Luis</td>
+                            <td>Olguin</td>
+                            <td>Ruiz</td>
+                            <td>221-175-9634</td>
+                            <td>jlolguin@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Patricia</td>
+                            <td>Casas</td>
+                            <td>Olguin</td>
+                            <td>222-784-0245</td>
+                            <td>patty_casas@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Miguel</td>
+                            <td>Vázquez</td>
+                            <td>Olguin</td>
+                            <td>221-648-6125</td>
+                            <td>mikevazqz@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Regina</td>
+                            <td>Montiel</td>
+                            <td>Olguin</td>
+                            <td>222-016-0048</td>
+                            <td>reginamon_25@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Isabel</td>
+                            <td>Olguin</td>
+                            <td>Guerra</td>
+                            <td>221-000-9431</td>
+                            <td>isa_olguin05@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por María Luisa Suárez Rodríguez</h5>
+        </footer>
+    </body>
+</html>
